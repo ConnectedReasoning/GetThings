@@ -1,0 +1,13 @@
+<html>
+<head>
+<meta charset='UTF-8'>
+<script language='javascript'>
+  var redirecturl = 'https://s3-eu-west-1.amazonaws.com/lin10-3p/Ops/May+18/F/UK/d82c08a6a08e53ac5e0cb947e84716dda37d5d1c21decd629e01f937c3f48c33.xls?mkt_tok=eyJpIjoiTUdVME5UWTNZekJrTWpaaSIsInQiOiJxczZSazZQcnpiZEFTSkI3QUlzdFwveHFxdE90NFBFUWV3S0ZZQW9oY2JjWXQzcm9UOWwwK3JHc01FVVdoWTQ0dFY2OVg5MjBQQ3BDdFA2N0FWdjY0Rzludks1YUdKQ05TRFJTNlJ2ZGd6TGs9In0%3D';
+  function redirect() {
+    var anchor = window.location.hash;
+    window.self.location = redirecturl + anchor;
+  }
+</script>
+</head>
+<body onload=redirect()></body>
+</html>
