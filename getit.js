@@ -14,7 +14,7 @@ var DOWNLOAD_DIR = './downloads/';
 // We will be downloading the files to a directory, so make sure it's there
 // This step is not required if you have manually created the directory
 var mkdir = 'mkdir -p ' + DOWNLOAD_DIR;
-file_urls = getUrls(500000);
+file_urls = getUrls(50000);
 var child = exec(mkdir, function(err, stdout, stderr) {
     if (err){ conosle.log("error on makedir");}
     else {
